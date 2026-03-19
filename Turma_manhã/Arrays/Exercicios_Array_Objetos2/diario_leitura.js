@@ -1,7 +1,7 @@
 const prompt = require(`prompt-sync`)();
 
 let aluno = {
-    nome: Felipe,
+    nome: `Felipe`,
     pontosLeitura: 10,
     historicoDias: [
         registro1 = {
@@ -21,11 +21,17 @@ let registro3 = {
 
 aluno.historicoDias.push(registro3);
 
-if (aluno.historicoDias[2])) {
+if (aluno.historicoDias[2].paginasLidas > 50 && aluno.pontosLeitura > 0) {
     
-} else {
+    aluno.pontosLeitura = aluno.pontosLeitura * 2;
+    aluno.historicoDias[2].data += ` - Super leitor!`;
+
+} else if (aluno.historicoDias[2].paginasLidas > 10) {
+    
+    aluno.pontosLeitura = aluno.pontosLeitura / 2;
     
 }
 
-
+console.log(`\n----------------------\n- Olá ${aluno.nome}!\n- Sua pontuação atual é de: ${aluno.pontosLeitura}
+- Histórico de dias lidos: ${aluno.historicoDias[0].data}, ${aluno.historicoDias[1].data}, ${aluno.historicoDias[2].data}`);
 
