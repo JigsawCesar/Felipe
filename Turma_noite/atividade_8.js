@@ -9,4 +9,8 @@ if (hobby.length == 0) {
     console.log(`- Seus hobbies são: ${hobby.join(', ')}.`);
 };
 
+console.log(hobby);
+console.log(hobby.length);
+
+
 
