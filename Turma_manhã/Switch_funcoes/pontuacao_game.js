@@ -17,6 +17,7 @@ for (let i = 0; i < 3; i++) {
 
 const somar_valores = (pontuacao) =>{
     
+    console.clear();
     soma = pontuacao[0] + pontuacao[1] + pontuacao[2];
 
     if (soma >200 || pontuacao[2] > 90) {
